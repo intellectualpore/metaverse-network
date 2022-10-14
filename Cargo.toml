@@ -1,0 +1,19 @@
+[profile.release]
+panic = 'unwind'
+
+[workspace]
+members = [
+    'pallets/*',
+    'traits/*',
+    'node',
+    'runtime/metaverse',
+    'runtime/continuum',
+    'runtime/pioneer',
+    'primitives/*',
+    'modules/relaychain',
+    'modules/support',
+]
+exclude = [
+    'modules/chainsafe',
+#    'runtime/integration-tests',
+]
